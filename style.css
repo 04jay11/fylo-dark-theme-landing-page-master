@@ -1,0 +1,50 @@
+img {
+    max-width: 100%;
+}
+
+nav ul li a{
+    position: relative;
+}
+
+nav ul li a:after {
+    content: "";
+    background-color: white;
+    height: 2px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s ;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+@media (min-width: 768px) {
+    main {
+        background: url(./images/bg-curvy-desktop.svg) no-repeat bottom;
+        background-size: 100% 300px;
+    }
+}
+@media (max-width: 768px) {
+    main {
+        background: url(./images/bg-curvy-mobile.svg) no-repeat bottom;
+        background-size: 100% 400px;
+    }
+}
+
+#email-error {
+    display: none;
+}
+
+#email-errorr.active {
+    display: block;
+}
+
+#early-access-form {
+background:linear-gradient(180deg, rgba(24,31,42,1) 50%, rgba(11,21,35,1) 50%);
+padding-bottom: 4rem;
+}
+
